@@ -1,11 +1,13 @@
+
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { OnlyTextDirective } from '../directives/only-text.directive';
 
 @Component({
   selector: 'app-alumnos',
   standalone: true,
-  imports: [FormsModule, CommonModule],
+  imports: [FormsModule, CommonModule, OnlyTextDirective],
   templateUrl: './alumnos.component.html',
   styleUrl: './alumnos.component.css',
 })
